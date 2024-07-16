@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmritāAura - Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <!-- Same header as in index.html -->
+      <div class="logo">AmritāAura</div>
+        <nav id="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="products.html">Products</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search...">
+            <button id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+        <button id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+    </header>
+
+    <main class="products-page">
+        <h1>Our Products</h1>
+        <div class="product-filters">
+            <select id="category-filter">
+                <option value="">All Categories</option>
+                <option value="face">Face Care</option>
+                <option value="body">Body Care</option>
+                <option value="hair">Hair Care</option>
+            </select>
+            <select id="sort-filter">
+                <option value="popular">Most Popular</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+            </select>
+        </div>
+        <div class="product-grid">
+            <!-- Add multiple product cards here -->
+            <div class="product-card">
+                <img src="/api/placeholder/300/300" alt="Product 1">
+                <h3>Ayurvedic Face Cream</h3>
+                <p>Nourishing cream with natural herbs</p>
+                <p class="price">$24.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Repeat for other products -->
+        </div>
+        <div class="pagination">
+            <button id="prev-page">Previous</button>
+            <span id="current-page">1</span>
+            <button id="next-page">Next</button>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Same footer as in index.html -->
+      <div class="footer-content">
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="social-media">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <p>&copy; 2024 AmritāAura. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
