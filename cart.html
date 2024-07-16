@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmritāAura - Your Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <!-- Same header as in index.html --><div class="logo">AmritāAura</div>
+        <nav id="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="products.html">Products</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search...">
+            <button id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+        <button id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+    </header>
+
+    <main class="cart-page">
+        <h1>Your Shopping Cart</h1>
+        <div id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div id="cart-summary">
+            <h2>Order Summary</h2>
+            <p>Subtotal: <span id="subtotal">$0.00</span></p>
+            <p>Shipping: <span id="shipping">$0.00</span></p>
+            <p>Tax: <span id="tax">$0.00</span></p>
+            <p><strong>Total: <span id="total">$0.00</span></strong></p>
+            <button id="checkout-button" class="cta-button">Proceed to Checkout</button>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Same footer as in index.html --><div class="footer-content">
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="social-media">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <p>&copy; 2024 AmritāAura. All rights reserved.</p>
+           
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
